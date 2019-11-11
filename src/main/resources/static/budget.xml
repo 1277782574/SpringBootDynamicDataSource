@@ -1,0 +1,16 @@
+<!--
+label:标签
+type:表单类型
+model:属性 ; 有url属性的标签 在vue中的数据绑定到 form.model 上
+placeholder:默认值
+url:获取表单数据的url
+        -->
+<beens>
+<been label="编码" type="input" model="number" placeholder="" />
+<been label="名称" type="input" model="name" placeholder="" />
+<been label="备注" type="input" model="remarks" placeholder="" />
+<been label="单据类型" type="select" model="documentsType" placeholder="请选择单据类型" url="/read/documentsType" />
+<been label="时间" type="date" model="dateTime" placeholder="请选择日期时间" />
+<been label="是否会签" type="switch" model="isSign" />
+<!--<been label="审批轨迹" type="steps" model="approvalTrajectory" url="/read/getSteps" />-->
+</beens>
